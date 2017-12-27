@@ -5,41 +5,41 @@ require(['../components/common'],function(){
 		e.preventDefault();
 		$(".music").toggleClass("active");
 		setTimeout(function(){
-			$(".music").removeClass("active");	
+			$(".music").removeClass("active");
 		},2000);
 	});
-	$(document).on('keyup focus', '.js-search-input', function(event) {
-		event.preventDefault();
-		
-		var eType=event.type;
-		/* Act on the event */
-		$.ajax({
-			url: './data/search.json',
-			type: 'GET',
-			dataType: 'json',
-			success: function(data){
-				var res;
-				var searchValue = $(this).val();
-				if(eType=="focusin" && searchValue ===""){
-					res = data.recomand;
-				}else if(searchValue !=="" && searchValue.indexOf("l") > "-1"){
-					
-					res = data.l;
-				}else if(searchValue !=="" && searchValue.indexOf("h") > "-1"){
-					res = data.h;
-				}else{
-					res =data.news;
-				}
-				app.handlebars($("#search-content-id"),res,$(".search-content-wrapper"),"html");
-				$(".search-content-wrapper").addClass("active");	
-				setTimeout(function(){
-					$(".search-content-wrapper").removeClass("active");	
-				},5000);
-			}
-		});
-	});
+	// $(document).on('keyup focus', '.js-search-input', function(event) {
+	// 	event.preventDefault();
+
+	// 	var eType=event.type;
+	// 	/* Act on the event */
+	// 	$.ajax({
+	// 		url: './data/search.json',
+	// 		type: 'GET',
+	// 		dataType: 'json',
+	// 		success: function(data){
+	// 			var res;
+	// 			var searchValue = $(this).val();
+	// 			if(eType=="focusin" && searchValue ===""){
+	// 				res = data.recomand;
+	// 			}else if(searchValue !=="" && searchValue.indexOf("l") > "-1"){
+
+	// 				res = data.l;
+	// 			}else if(searchValue !=="" && searchValue.indexOf("h") > "-1"){
+	// 				res = data.h;
+	// 			}else{
+	// 				res =data.news;
+	// 			}
+	// 			app.handlebars($("#search-content-id"),res,$(".search-content-wrapper"),"html");
+	// 			$(".search-content-wrapper").addClass("active");
+	// 			setTimeout(function(){
+	// 				$(".search-content-wrapper").removeClass("active");
+	// 			},5000);
+	// 		}
+	// 	});
+	// });
 	/*
-	*	@action: 实现search input 的focus keyup事件 
+	*	@action: 实现search input 的focus keyup事件
  	*/
 	$(document).on('keyup focus', '.js-search-input', function(event) {
 		event.preventDefault();
@@ -67,12 +67,13 @@ require(['../components/common'],function(){
 		});
 	});
 	/*
-	*	@action: 实现search搜索按钮事件 
+	*	@action: 实现search搜索按钮事件
  	*/
  	$(document).on('click', '.js-search-btn', function(event) {
  		event.preventDefault();
  		/* Act on the event */
  		var searchValue = $(".js-search-input").val();
+ 		var eType = event.type;
  		$.ajax({
 			url: './data/search.json',
 			type: 'GET',
@@ -117,7 +118,7 @@ require(['../components/common'],function(){
 				contentList = data;
 				$(".js-load-more").hide();
 			}else{
-				contentList = data.splice(config.count,config.row); 
+				contentList = data.splice(config.count,config.row);
 			}
 			app.handlebars($("#content-id"),contentList,$(".js-content-info"),"append");
 		}
