@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LuyisWu</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <link rel="shortcut icon" href="./images/favicon.ico" />
+        <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="./css/common.css">
+        <link rel="stylesheet" type="text/css" href="./css/index.css">
+        <script type="text/javascript">
+        var app = app || {};
+        var config = {};
+        </script>
+    </head>
+    <body class="home-page bg">
+        <div class="music-wrapper">
+            <div class="music">
+                <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=110 src="//music.163.com/outchain/player?type=0&id=2021858368&auto=1&height=90"></iframe>
+                <div class="music-btn active">
+                    <a class="js-music-action music-action" ><span class="glyphicon glyphicon-music music-icon"></span></a>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar top-navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle navbar-user" data-toggle="collapse" data-target="#navbar-user-show">
+                    <span class="sr-only">用户</span>
+                    <span class="glyphicon glyphicon-user"></span>
+                    </button>
+                    <button type="button" class="navbar-toggle navbar-search" data-toggle="collapse" data-target="#navbar-search-show">
+                    <span class="sr-only">搜索</span>
+                    <span class="glyphicon glyphicon-search"></span>
+                    </button>
+                    <a class="navbar-brand" href="/web/index.html">LUYISWU</a>
+                </div>
+                <div class="collapse navbar-collapse right-left" id="navbar-user-show">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle img-nav-link" data-toggle="dropdown">
+                            <img src="./images/default.jpg" class="img-circle img-xs img-thumbnail img-mr-20"><span>LuyisWu</span><b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">个人主页</a></li>
+                                <li><a href="#">设置</a></li>
+                                <li><a href="#">资料</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">退出</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="collapse navbar-collapse right-left" id="navbar-search-show">
+                    <div>
+                        <form class="navbar-form navbar-left header-search-form" role="search">
+                            <div class="form-group">
+                                <input type="text" class="form-control js-search-input" placeholder="请输入关键字">
+                            </div>
+                            <button type="submit" class="btn btn-black header-search js-search-btn">搜索</button>
+                        </form>
+                        <div class="search-content-wrapper"></div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </nav>
+        <div class="sidebar navbar-inverse">
+            <ul class="nav navbar-inverse">
+                <li class="active"><a href="#"><span class="glyphicon padr-20 glyphicon-home"></span><span class="title">首页</span></a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                   <span class="glyphicon padr-20 glyphicon-folder-open"></span><span class="title">文章</span> <b class="caret pull-right"></b><span class="clearfix"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" class="line-34"><span class="glyphicon padr-20 glyphicon-pencil"></span><span class="title">文章</span></a></li>
+                        <li><a href="#" class="line-34"><span class="glyphicon padr-20 glyphicon-pencil"></span><span class="title">文章</span></a></li>
+                        <li><a href="#" class="line-34"><span class="glyphicon padr-20 glyphicon-pencil"></span><span class="title">文章</span></a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                   <span class="glyphicon padr-20 glyphicon-folder-open"></span><span class="title">文章</span> <b class="caret pull-right"></b><span class="clearfix"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" class="line-34"><span class="glyphicon padr-20 glyphicon-pencil"></span><span class="title">文章</span></a></li>
+                        <li><a href="#" class="line-34"><span class="glyphicon padr-20 glyphicon-pencil"></span><span class="title">日记</span></a></li>
+                        <li><a href="#" class="line-34"><span class="glyphicon padr-20 glyphicon-pencil"></span><span class="title">另一个我</span></a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                   <span class="glyphicon padr-20 glyphicon-folder-open"></span><span class="title">文章</span> <b class="caret pull-right"></b><span class="clearfix"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" class="line-34"><span class="glyphicon padr-20 glyphicon-pencil"></span><span class="title">文章</span></a></li>
+                        <li><a href="#" class="line-34"><span class="glyphicon padr-20 glyphicon-pencil"></span><span class="title">文章</span></a></li>
+                        <li><a href="#" class="line-34"><span class="glyphicon padr-20 glyphicon-pencil"></span><span class="title">文章</span></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="content-block">
+            <div class="content-info">
+                <ul class="thumbnails js-content-info">
+
+                </ul>
+                <div class="css-load-more"><a href="" class="js-load-more">查看更多</a></div>
+                <div class="copyright">@copyright by luyiswu</div>
+            </div>
+        </div>
+        <footer>
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="top: 100px;">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title" id="myModalLabel">二维码</h4>
+                        </div>
+                        <div class="modal-body text-center"><img src="./images/qrcode.png"></div>
+                    </div><!-- /.modal-content -->
+                </div><!-- /.modal -->
+            </div>
+        </footer>
+        <!-- 搜索内容显示 -->
+        <script id="search-content-id" type="text/x-handlebars-template">
+        <ul id="search-content" class="list-unstyled">
+            {{#each this}}
+            <li><a href="{{this.url}}">{{this.name}}</a></li>
+            {{/each}}
+        </ul>
+        </script>
+        <!-- 内容显示 -->
+        <script id="content-id" type="text/x-handlebars-template">
+                {{#each this}}
+                <li class="span4">
+                    <div class="thumbnail hover">
+                        <a href="{{this.url}}" class="block-link">
+                            <img src="{{this.img}}" class="img-circle inline-block img-thumbnail img-small" alt="">
+                            <div class="inline-block vt width-200">
+                                <h3 class="general ">{{this.name}}</h3>
+                                <p class="description">{{this.description}}</p>
+                                <p class="date row"><span class="pull-right">{{this.date}}</span></p>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                {{/each}}
+        </script>
+        <script type="text/javascript" src="./js/libs/require.js" data-main="./js/pages/index"></script>
+    </body>
+</html>

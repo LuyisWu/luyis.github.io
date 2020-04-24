@@ -5,7 +5,7 @@ module.exports = {
     },
     //入口文件输出配置
     output: {
-        path: '/dist/js',
+        path: '/hexo/PortableHexo/hexo/public',
         filename: '[name].bundle.js'
     }
 };
